@@ -1,8 +1,9 @@
 import Cards from "../card/Cards";
 import Container from "@material-ui/core/Container";
-import React from 'react';
+import React, { useEffect } from 'react';
 import {makeStyles} from '@material-ui/core/styles'
 export default () => {
+
  const useStyles = makeStyles(theme => ({
         icon: {
           marginRight: theme.spacing(2)
@@ -21,6 +22,9 @@ export default () => {
         }
       }));
 const classes = useStyles();
+useEffect( ()=>{
+  document.title = "Home";
+},[]);
 
 return (
 <Container className={classes.cardGrid} maxWidth="md" >

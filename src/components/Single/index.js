@@ -3,8 +3,11 @@ import { Typography, Container, CssBaseline } from '@material-ui/core';
 import Image from 'material-ui-image';
 
 export default class Single extends React.Component{
-
+componentDidMount(){
+  document.title = this.props.location.state.title;
+}
 render(){
+
     const { location} = this.props;
 
     return(
