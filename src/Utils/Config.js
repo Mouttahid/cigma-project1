@@ -1,0 +1,1 @@
+export const API = "http://localhost/blog/public/api/home";
